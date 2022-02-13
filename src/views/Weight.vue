@@ -1,21 +1,32 @@
 <template>
-  <div id="container">
-    <div class="cont_in">
-      <h1 class="main_tit">
-        Dablisher<br>
-        <span>Choose The Weight</span>
-      </h1>
-      <div class="bottom_cont">
-        <div class="bottom_btn dark_blue">
-          <router-link to="/start">Light</router-link>
-        </div>
-        <div class="bottom_btn dark_blue">
-          <router-link to="/start">Middle</router-link>
-        </div>
-        <div class="bottom_btn dark_blue">
-          <router-link to="/start">Heavy</router-link>
-        </div>
+    <content-header></content-header>
+
+    <h1 class="container__main-tit">
+      <strong class="container__tit--big">Dablisher</strong>
+      <span>Choose The Preference</span>
+    </h1>
+    <div class="container__btm-cont">
+      <div class="container__btm-box">
+        <router-link to="/Start" class="container__btm-btn container__btm-btn--light-blue">Light</router-link>
+      </div>
+      <div class="container__btm-box">
+        <router-link to="/Start" class="container__btm-btn container__btm-btn--blue">Normal</router-link>
+      </div>
+      <div class="container__btm-box">
+        <router-link to="/Start" class="container__btm-btn container__btm-btn--dark-blue">Heavy</router-link>
       </div>
     </div>
-  </div>
 </template>
+
+
+<script>
+  import ContentHeader from '../components/layout/Header.vue'
+  
+  export default {
+    components: {
+      'content-header' : ContentHeader,
+    }
+  }
+
+
+</script>

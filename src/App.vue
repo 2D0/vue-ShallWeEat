@@ -2,13 +2,28 @@
 </script>
 
 <template>
-  <div id="container">
-    <div class="cont_in">
-  <router-view></router-view>
+    <div class="container">
+      <div class="container__in">
+        <router-view></router-view>
+      </div>
     </div>
-  </div>
 </template>
 
 <style lang="scss">
-@import '@/assets/base.scss';
+  @import '@/assets/base.scss';
+
 </style>
+
+<script>
+
+  export default {
+    data: function(){
+      return {
+        username: '',
+      }
+    }
+  }
+
+
+
+</script>

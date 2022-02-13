@@ -9,10 +9,20 @@ const router = createRouter({
       component: () => import("../views/Home.vue")
     },
     {
-      path: '/weight',
+      path: '/Weight',
       name: 'weight',
       component: () => import("../views/Weight.vue")
-    }
+    },
+    {
+      path: '/Start',
+      name: 'start',
+      component: () => import("../views/Start.vue")
+    },
+    {
+      path: '/Restart',
+      name: 'restart',
+      component: () => import("../views/Restart.vue")
+    },
   ]
 })
 
