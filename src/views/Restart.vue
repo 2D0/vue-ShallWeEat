@@ -1,13 +1,22 @@
 <template>
     <content-header></content-header>
 
-    <h1 class="container__main-tit">
-      <strong class="container__tit--big">Dablisher</strong>
-      <span>Is Going To Eat</span>
-    </h1>
-    <div class="container__btm-cont">
-      <div class="container__btm-box">
-        <button @click="back" class="container__btm-btn container__btm-btn--dark-blue">Restart</button>
+    <div class="contain__in">
+      <h1 class="contain__main-tit">
+        <strong class="contain__tit--big">Dablisher</strong>
+        <span>Is Going To Eat</span>
+      </h1>
+      <div class="contain__mid-cont">
+        <div class="contain__mid-cont--photo">
+          <div class="contain__mid-cont__box">
+            <img src="../assets/foodData/RiceCake.jpg" alt="rice-cake">
+          </div>
+        </div>
+        <div class="contain__btm-cont--start">
+          <div class="contain__btm-box">
+            <button @click="back" class="contain__btm-btn contain__btm-btn--dark-blue">Restart</button>
+          </div>
+        </div>
       </div>
     </div>
 </template>

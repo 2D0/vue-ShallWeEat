@@ -2,28 +2,14 @@
 </script>
 
 <template>
-    <div class="container">
-      <div class="container__in">
+    <div class="contain">
         <router-view></router-view>
       </div>
-    </div>
 </template>
 
 <style lang="scss">
-  @import '@/assets/base.scss';
+  @import '@/assets/scss/reset.scss';
+  @import '@/assets/scss/base.scss';
 
 </style>
 
-<script>
-
-  export default {
-    data: function(){
-      return {
-        username: '',
-      }
-    }
-  }
-
-
-
-</script>
