@@ -4,9 +4,10 @@
     <div class="contain__in">
       <h1 class="contain__main-tit">
         <strong class="contain__tit--big">
-          <div :UserName='name' @name='PassName'></div>
-          <name-data :UserName='name' @name='PassName'></name-data>
-          <my-name UserName="nameVal" @input="NameFixOn"></my-name>
+          <div>
+            {{UserName}}
+            {{name}}
+          </div>
         </strong>
         <span>Choose The Preference</span>
       </h1>
@@ -27,23 +28,28 @@
 
 <script>
   import ContentHeader from '../components/layout/Header.vue'
-  import NameData from './Home.vue'
 
+        console.log(localStorage.value);
   export default {
+    name:'Weight',
+    props: {
+      name: {
+        type: String,
+        default: '',
+      },
+      age: {
+        type: Number,
+        default: 0,
+      }
+    },
     components: {
       'content-header' : ContentHeader,
-      'name-data' : NameData
     },
     data: function(){
-      return{
-        name: 'UserName'
+      return {
+        UserName: '',
       }
     },
-    methods: {
-      PassName: function(){
-        this.name = UserName;
-      }
-    }
   }
 
 
