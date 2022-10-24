@@ -6,7 +6,7 @@
         </h1>
       <div class="contain__btm-cont">
         <div class="contain__name-input contain__btm-box">
-          <input type="text" placeholder="Your Name" @input="UserName" maxlength="8">
+          <input type="text" placeholder="Your Name" v-model="UserName" maxlength="10">
         </div>
         <div class="contain__btm-box">
           <router-link 
